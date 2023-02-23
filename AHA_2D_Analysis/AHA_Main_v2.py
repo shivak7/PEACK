@@ -1,0 +1,98 @@
+import sys
+sys.path.insert(1, '/Users/shiva/Dropbox/Burke Work/DeepMarker/Processed Data/PythonScripts/PEACK_API')
+from PEACK import ProcessAsMultiEpochs, AnalyzeEpochs
+from ParamDef import AHAParamsDemo, SaveParameters, LoadParameters
+from PEACKMetrics import AHA
+import numpy as np
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+# P1 = AHAParamsDemo()
+# SaveParameters(P1, "test.xml")
+
+
+def Generate_PEACK_Data(ParamFile):
+    ##Process Body Kinematics
+
+    AHA_Parameters = LoadParameters(ParamFile)
+    ProcessAsMultiEpochs(AHA_Parameters)
+
+    #import pdb; pdb.set_trace()
+    ##Process Hand Kinematics
+
+    # AHA_Parameters = LoadParameters("AHA_LHand_Params.xml")
+    # ProcessAsSingleEpochs(AHA_Parameters)
+    #
+    # AHA_Parameters = LoadParameters("AHA_RHand_Params.xml")
+    # ProcessAsSingleEpochs(AHA_Parameters)
+
+
+def Analyze_PEACK_Data(ParamFile):
+
+    ## Analyze body movements (Orientation: Shoulder + Trunk Movements)
+
+    AHA_Parameters = LoadParameters(ParamFile)
+
+    FuncList = []
+    FuncList.append(AHA.trunk_displacement_angle)
+    FuncList.append(AHA.trunk_rotation_angle)
+    FuncList.append(AHA.trunk_displacement_distance)
+    FuncList.append(AHA.elbow_flexion_angle)                                        #Temporary! change back to append for single metric
+    Res = AnalyzeEpochs(AHA_Parameters, FuncList)
+    #import pdb; pdb.set_trace()
+    Res = np.squeeze(np.array(Res))
+    return Res
+    #np.savetxt("Orientation.csv", Res, delimiter=",", fmt='%.2f')
+
+def ResultsDataFrame(ResultValues, SubjectLabels, GroupLabel, YearLabel):
+
+    Value = []
+    Subject = []
+    Task = []
+    Measures = []#["Trunk Sway Angle", "Trunk Rotation Angle", "Trunk Sway Distance"]
+    Group = []
+    for i in range(len(ResultValues)):          #Subjects
+        for j in range(len(ResultValues[i])):       # Tasks
+                Value.append(ResultValues[i][j][:])
+                Task.append("Task " + str(j + 1))
+                Group.append(GroupLabel)
+                Subject.append(SubjectLabels[i] + '_' + YearLabel)
+    npVal = np.array(Value)
+    df_list = list(zip(Subject, npVal[:,0], npVal[:,1], npVal[:,2], npVal[:,3], Task, Group))
+    #import pdb; pdb.set_trace()
+    df = pd.DataFrame(df_list,
+                  columns=["Subject ID", "Trunk Angular Displacement", "Trunk Rotation Angle", "Trunk linear Distance", "Elbow Flexion L/R", "Task", "Group"])
+
+    #import pdb; pdb.set_trace()
+    return df
+
+## Main code here
+
+# Generate_PEACK_Data("AHA_Body_Params_2015_Pre.xml")
+# Generate_PEACK_Data("AHA_Body_Params_2017_Pre.xml")
+# Generate_PEACK_Data("AHA_Body_Params_2018_Pre.xml")
+# Generate_PEACK_Data("AHA_Body_Params_2015_Post.xml")
+# Generate_PEACK_Data("AHA_Body_Params_2017_Post.xml")
+# Generate_PEACK_Data("AHA_Body_Params_2018_Post.xml")
+
+res2015_pre, res2015_pre_labels = Analyze_PEACK_Data("AHA_Body_Params_2015_Pre.xml")
+res2017_pre, res2017_pre_labels = Analyze_PEACK_Data("AHA_Body_Params_2017_Pre.xml")
+res2018_pre, res2018_pre_labels = Analyze_PEACK_Data("AHA_Body_Params_2018_Pre.xml")
+
+res2015_post, res2015_post_labels = Analyze_PEACK_Data("AHA_Body_Params_2015_Post.xml")
+res2017_post, res2017_post_labels = Analyze_PEACK_Data("AHA_Body_Params_2017_Post.xml")
+res2018_post, res2018_post_labels = Analyze_PEACK_Data("AHA_Body_Params_2018_Post.xml")
+
+df1 = ResultsDataFrame(res2015_pre, res2015_pre_labels, "Pre", "2015")
+df2 = ResultsDataFrame(res2017_pre, res2017_pre_labels, "Pre", "2017")
+df3 = ResultsDataFrame(res2018_pre, res2018_pre_labels,"Pre", "2018")
+
+df4 = ResultsDataFrame(res2015_post, res2015_post_labels, "Post", "2015")
+df5 = ResultsDataFrame(res2017_post, res2017_post_labels, "Post", "2017")
+df6 = ResultsDataFrame(res2018_post, res2018_post_labels, "Post", "2018")
+
+df = pd.concat([df1, df2, df3, df4, df5, df6], ignore_index=True)
+df.to_csv("AHA_2015_2017_2018_filtered3.csv", index=False)
+
+#import pdb; pdb.set_trace()
