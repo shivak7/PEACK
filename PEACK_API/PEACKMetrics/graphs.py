@@ -25,7 +25,7 @@ def plot3Dline(ax,pt1,pt2,idx,plotmode = 'default', color = 'gray'):
         Y = [pt1[idx][1], pt2[idx][1]]
         Z = [pt1[idx][2], pt2[idx][2]]
 
-        ax.plot(X, Y, Z, 'gray')
+        ax.plot(X, Y, Z, color)
         return
 
     if plotmode == "mean":

@@ -109,18 +109,18 @@ def classify_clusters(trials, min_monotonic_range=20):
     return trials,labels
 
 
-def avg_traj(trials, max_length=None):
+def avg_traj(trials, min_monotonic_range = 50, max_length=None):
 
 
-    trials,labels = classify_clusters(trials, min_monotonic_range=50)
+    trials,labels = classify_clusters(trials, min_monotonic_range=min_monotonic_range)
     ts_data = to_time_series_dataset(trials)
 
     Ulabels = np.unique(labels)
 
-    # for i in range(len(Ulabels)):
-    #     X = ts_data[labels==Ulabels[i],:,0]
-    #     plt.subplot(len(Ulabels),1,i+1)
-    #     plt.plot(X.T)
-    # plt.show()
+    for i in range(len(Ulabels)):
+        X = ts_data[labels==Ulabels[i],:,0]
+        plt.subplot(len(Ulabels),1,i+1)
+        plt.plot(X.T)
+    plt.show()
 
     return len(Ulabels)

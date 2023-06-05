@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Param>
-	<DataPath>/Users/shiva/Dropbox/Burke Work/DeepMarker/Processed Data/Scratch/CP_AH_Data</DataPath>
-	<MapFile>VICON_BodyMap.csv</MapFile>
+	<DataPath>../../Data/Proprioception/Vicon/CP_AH_Data</DataPath>
+	<MapFile>Datafiles/VICON_BodyMap.csv</MapFile>
 	<JointNames>
 		<item>RDeltoid</item>
 		<item>RElbRadial</item>
@@ -23,7 +23,7 @@
 		<item>-3000</item>
 		<item>-1000</item>
 	</Trunc>
-	<OutFile>CP_2019_Prop_AH.pkl</OutFile>
+	<OutFile>Datafiles/CP_2019_Prop_AH.pkl</OutFile>
 	<do_filtering>True</do_filtering>
 	<do_smoothing>False</do_smoothing>
 	<smoothing_alpha>0.1</smoothing_alpha>

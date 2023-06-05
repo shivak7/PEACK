@@ -1,0 +1,60 @@
+Comparing groups:  CP AH, CP LA
+Task:  Muscles
+Using statistic:  Mannwhitneyu
+Statistic:  147.0  Sig:  0.29486696936813717
+
+Comparing groups:  CP AH, CP LA
+Task:  PowerBars
+Using statistic:  Mannwhitneyu
+Statistic:  144.0  Sig:  0.35293103307621654
+
+Comparing groups:  CP AH, TD Control
+Task:  Muscles
+Using statistic:  Mannwhitneyu
+Statistic:  57.0  Sig:  0.04143407208113038
+
+Comparing groups:  CP AH, TD Control
+Task:  PowerBars
+Using statistic:  Mannwhitneyu
+Statistic:  56.0  Sig:  0.0372500572178399
+
+Comparing groups:  CP LA, TD Control
+Task:  Muscles
+Using statistic:  Mannwhitneyu
+Statistic:  24.0  Sig:  0.0007716459456557988
+
+Comparing groups:  CP LA, TD Control
+Task:  PowerBars
+Using statistic:  Mannwhitneyu
+Statistic:  46.0  Sig:  0.01880710166283665
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  Muscles
+Using statistic:  Mannwhitneyu
+Statistic:  62.0  Sig:  0.04454942885700874
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  PowerBars
+Using statistic:  Mannwhitneyu
+Statistic:  81.0  Sig:  0.2248619998848329
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  Muscles
+Using statistic:  Mannwhitneyu
+Statistic:  60.0  Sig:  0.036365191078537924
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  PowerBars
+Using statistic:  Mannwhitneyu
+Statistic:  61.0  Sig:  0.062357060361406244
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  Muscles
+Using statistic:  Mannwhitneyu
+Statistic:  131.0  Sig:  0.654297452142436
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  PowerBars
+Using statistic:  Mannwhitneyu
+Statistic:  111.0  Sig:  0.3774866177946965
+

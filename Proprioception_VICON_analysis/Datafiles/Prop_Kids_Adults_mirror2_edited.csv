@@ -1,0 +1,451 @@
+ID,Values,Metric,Pose,Group
+BT020,0.80350296,Distance,Muscles,CP AH
+BT020,0.706782282,Angle,Muscles,CP AH
+BT020,0.845239701,Orientation,Muscles,CP AH
+BT018,0.928936782,Distance,Muscles,CP AH
+BT018,0.899803571,Angle,Muscles,CP AH
+BT018,0.895731048,Orientation,Muscles,CP AH
+BT023,0.813556258,Distance,Muscles,CP AH
+BT023,0.826612432,Angle,Muscles,CP AH
+BT023,0.903061178,Orientation,Muscles,CP AH
+BT021,0.547823413,Distance,Muscles,CP AH
+BT021,0.502860187,Angle,Muscles,CP AH
+BT021,0.892152069,Orientation,Muscles,CP AH
+BT017,0.794155731,Distance,Muscles,CP AH
+BT017,0.855714059,Angle,Muscles,CP AH
+BT017,0.836115036,Orientation,Muscles,CP AH
+BT019,0.741768337,Distance,Muscles,CP AH
+BT019,0.690903162,Angle,Muscles,CP AH
+BT019,0.911261573,Orientation,Muscles,CP AH
+BT022,0.872787876,Distance,Muscles,CP AH
+BT022,0.748292592,Angle,Muscles,CP AH
+BT022,0.803483803,Orientation,Muscles,CP AH
+BT026,0.865425783,Distance,Muscles,CP AH
+BT026,0.971008869,Angle,Muscles,CP AH
+BT026,0.940209286,Orientation,Muscles,CP AH
+BT025,0.909132362,Distance,Muscles,CP AH
+BT025,0.919256434,Angle,Muscles,CP AH
+BT025,0.887947307,Orientation,Muscles,CP AH
+BT030,0.920454022,Distance,Muscles,CP AH
+BT030,0.882086733,Angle,Muscles,CP AH
+BT030,0.912394116,Orientation,Muscles,CP AH
+BT031,0.657540221,Distance,Muscles,CP AH
+BT031,0.528211593,Angle,Muscles,CP AH
+BT031,0.907173285,Orientation,Muscles,CP AH
+BT032,0.85284425,Distance,Muscles,CP AH
+BT032,0.938534671,Angle,Muscles,CP AH
+BT032,0.96152551,Orientation,Muscles,CP AH
+BT033,0.949069072,Distance,Muscles,CP AH
+BT033,0.914797314,Angle,Muscles,CP AH
+BT033,0.985601889,Orientation,Muscles,CP AH
+BT034,0.732922059,Distance,Muscles,CP AH
+BT034,0.596366427,Angle,Muscles,CP AH
+BT034,0.957430528,Orientation,Muscles,CP AH
+BT035,0.883931861,Distance,Muscles,CP AH
+BT035,0.87371437,Angle,Muscles,CP AH
+BT035,0.912592965,Orientation,Muscles,CP AH
+BT002b,0.828549797,Distance,Muscles,CP AH
+BT002b,0.840567229,Angle,Muscles,CP AH
+BT002b,0.945269627,Orientation,Muscles,CP AH
+BT020,0.918710315,Distance,PowerBars,CP AH
+BT020,0.955546001,Angle,PowerBars,CP AH
+BT020,0.952495094,Orientation,PowerBars,CP AH
+BT018,0.890500062,Distance,PowerBars,CP AH
+BT018,0.737132899,Angle,PowerBars,CP AH
+BT018,0.926465692,Orientation,PowerBars,CP AH
+BT023,0.874510856,Distance,PowerBars,CP AH
+BT023,0.908599732,Angle,PowerBars,CP AH
+BT023,0.893913388,Orientation,PowerBars,CP AH
+BT021,0.668267076,Distance,PowerBars,CP AH
+BT021,0.476649512,Angle,PowerBars,CP AH
+BT021,0.842533594,Orientation,PowerBars,CP AH
+BT017,0.749945028,Distance,PowerBars,CP AH
+BT017,0.768345811,Angle,PowerBars,CP AH
+BT017,0.869233812,Orientation,PowerBars,CP AH
+BT019,0.83916774,Distance,PowerBars,CP AH
+BT019,0.721664928,Angle,PowerBars,CP AH
+BT019,0.835971034,Orientation,PowerBars,CP AH
+BT022,0.802739598,Distance,PowerBars,CP AH
+BT022,0.892009305,Angle,PowerBars,CP AH
+BT022,0.871307639,Orientation,PowerBars,CP AH
+BT026,0.82074403,Distance,PowerBars,CP AH
+BT026,0.879047191,Angle,PowerBars,CP AH
+BT026,0.9142509,Orientation,PowerBars,CP AH
+BT025,0.848058516,Distance,PowerBars,CP AH
+BT025,0.823495863,Angle,PowerBars,CP AH
+BT025,0.906335056,Orientation,PowerBars,CP AH
+BT030,0.900908575,Distance,PowerBars,CP AH
+BT030,0.898750394,Angle,PowerBars,CP AH
+BT030,0.880890574,Orientation,PowerBars,CP AH
+BT031,0.809408966,Distance,PowerBars,CP AH
+BT031,0.755801628,Angle,PowerBars,CP AH
+BT031,0.868377045,Orientation,PowerBars,CP AH
+BT032,0.892045443,Distance,PowerBars,CP AH
+BT032,0.935554701,Angle,PowerBars,CP AH
+BT032,0.934760664,Orientation,PowerBars,CP AH
+BT033,0.968613522,Distance,PowerBars,CP AH
+BT033,0.924611755,Angle,PowerBars,CP AH
+BT033,0.979749917,Orientation,PowerBars,CP AH
+BT034,0.851995334,Distance,PowerBars,CP AH
+BT034,0.851139454,Angle,PowerBars,CP AH
+BT034,0.940988523,Orientation,PowerBars,CP AH
+BT035,0.889985902,Distance,PowerBars,CP AH
+BT035,0.818974395,Angle,PowerBars,CP AH
+BT035,0.886833018,Orientation,PowerBars,CP AH
+BT002b,0.966110389,Distance,PowerBars,CP AH
+BT002b,0.968638929,Angle,PowerBars,CP AH
+BT002b,0.947400978,Orientation,PowerBars,CP AH
+BT020,0.848942883,Distance,Muscles,CP LA
+BT020,0.722222755,Angle,Muscles,CP LA
+BT020,0.859750678,Orientation,Muscles,CP LA
+BT018,0.799799464,Distance,Muscles,CP LA
+BT018,0.7408863,Angle,Muscles,CP LA
+BT018,0.854356632,Orientation,Muscles,CP LA
+BT023,0.75417831,Distance,Muscles,CP LA
+BT023,0.852887407,Angle,Muscles,CP LA
+BT023,0.848106902,Orientation,Muscles,CP LA
+BT021,0.661123076,Distance,Muscles,CP LA
+BT021,0.452201397,Angle,Muscles,CP LA
+BT021,0.865899045,Orientation,Muscles,CP LA
+BT017,0.831881101,Distance,Muscles,CP LA
+BT017,0.802129388,Angle,Muscles,CP LA
+BT017,0.735044836,Orientation,Muscles,CP LA
+BT019,0.887374096,Distance,Muscles,CP LA
+BT019,0.917773879,Angle,Muscles,CP LA
+BT019,0.923246118,Orientation,Muscles,CP LA
+BT022,0.930768157,Distance,Muscles,CP LA
+BT022,0.864168097,Angle,Muscles,CP LA
+BT022,0.886309951,Orientation,Muscles,CP LA
+BT026,0.751166126,Distance,Muscles,CP LA
+BT026,0.693686499,Angle,Muscles,CP LA
+BT026,0.913176035,Orientation,Muscles,CP LA
+BT025,0.804783294,Distance,Muscles,CP LA
+BT025,0.701352551,Angle,Muscles,CP LA
+BT025,0.90579814,Orientation,Muscles,CP LA
+BT029,0.747018213,Distance,Muscles,CP LA
+BT029,0.427256702,Angle,Muscles,CP LA
+BT029,0.790406289,Orientation,Muscles,CP LA
+BT032,0.899180784,Distance,Muscles,CP LA
+BT032,0.91899192,Angle,Muscles,CP LA
+BT032,0.924945692,Orientation,Muscles,CP LA
+BT033,0.949069072,Distance,Muscles,CP LA
+BT033,0.914797314,Angle,Muscles,CP LA
+BT033,0.985601889,Orientation,Muscles,CP LA
+BT034,0.680350227,Distance,Muscles,CP LA
+BT034,0.586936969,Angle,Muscles,CP LA
+BT034,0.954676408,Orientation,Muscles,CP LA
+BT035,0.702004375,Distance,Muscles,CP LA
+BT035,0.524064041,Angle,Muscles,CP LA
+BT035,0.907289932,Orientation,Muscles,CP LA
+BT002b,0.967095228,Distance,Muscles,CP LA
+BT002b,0.992177344,Angle,Muscles,CP LA
+BT002b,0.899898103,Orientation,Muscles,CP LA
+BT020,0.843226534,Distance,PowerBars,CP LA
+BT020,0.777907567,Angle,PowerBars,CP LA
+BT020,0.764782276,Orientation,PowerBars,CP LA
+BT018,0.959935098,Distance,PowerBars,CP LA
+BT018,0.914920994,Angle,PowerBars,CP LA
+BT018,0.94628248,Orientation,PowerBars,CP LA
+BT023,0.718168683,Distance,PowerBars,CP LA
+BT023,0.724773581,Angle,PowerBars,CP LA
+BT023,0.855075673,Orientation,PowerBars,CP LA
+BT021,0.986336284,Distance,PowerBars,CP LA
+BT021,0.880603103,Angle,PowerBars,CP LA
+BT021,0.912422184,Orientation,PowerBars,CP LA
+BT017,0.817080326,Distance,PowerBars,CP LA
+BT017,0.873460437,Angle,PowerBars,CP LA
+BT017,0.867129284,Orientation,PowerBars,CP LA
+BT019,0.794285316,Distance,PowerBars,CP LA
+BT019,0.724515539,Angle,PowerBars,CP LA
+BT019,0.855722707,Orientation,PowerBars,CP LA
+BT022,0.907943861,Distance,PowerBars,CP LA
+BT022,0.814206367,Angle,PowerBars,CP LA
+BT022,0.902663921,Orientation,PowerBars,CP LA
+BT026,0.718839789,Distance,PowerBars,CP LA
+BT026,0.743335705,Angle,PowerBars,CP LA
+BT026,0.902883465,Orientation,PowerBars,CP LA
+BT025,0.79619501,Distance,PowerBars,CP LA
+BT025,0.894232944,Angle,PowerBars,CP LA
+BT025,0.922751808,Orientation,PowerBars,CP LA
+BT032,0.871757176,Distance,PowerBars,CP LA
+BT032,0.86874525,Angle,PowerBars,CP LA
+BT032,0.925962094,Orientation,PowerBars,CP LA
+BT033,0.897876421,Distance,PowerBars,CP LA
+BT033,0.873670966,Angle,PowerBars,CP LA
+BT033,0.98412471,Orientation,PowerBars,CP LA
+BT034,0.884232371,Distance,PowerBars,CP LA
+BT034,0.853430021,Angle,PowerBars,CP LA
+BT034,0.943026743,Orientation,PowerBars,CP LA
+BT035,0.870275504,Distance,PowerBars,CP LA
+BT035,0.742546858,Angle,PowerBars,CP LA
+BT035,0.904009121,Orientation,PowerBars,CP LA
+BT002b,0.98847043,Distance,PowerBars,CP LA
+BT002b,0.896783239,Angle,PowerBars,CP LA
+BT002b,0.936910375,Orientation,PowerBars,CP LA
+TD1,0.854348579,Distance,Muscles,TD Control
+TD1,0.780430262,Angle,Muscles,TD Control
+TD1,0.910210014,Orientation,Muscles,TD Control
+TD2,0.898277146,Distance,Muscles,TD Control
+TD2,0.926616126,Angle,Muscles,TD Control
+TD2,0.950055362,Orientation,Muscles,TD Control
+TD3,0.983651239,Distance,Muscles,TD Control
+TD3,0.943258359,Angle,Muscles,TD Control
+TD3,0.957775673,Orientation,Muscles,TD Control
+TD4,0.921342438,Distance,Muscles,TD Control
+TD4,0.872768374,Angle,Muscles,TD Control
+TD4,0.858109558,Orientation,Muscles,TD Control
+TD5,0.879323403,Distance,Muscles,TD Control
+TD5,0.838135046,Angle,Muscles,TD Control
+TD5,0.960163962,Orientation,Muscles,TD Control
+TD6,0.786363814,Distance,Muscles,TD Control
+TD6,0.677310043,Angle,Muscles,TD Control
+TD6,0.937667128,Orientation,Muscles,TD Control
+TD7,0.905901063,Distance,Muscles,TD Control
+TD7,0.955436457,Angle,Muscles,TD Control
+TD7,0.963421377,Orientation,Muscles,TD Control
+TD8,0.937007591,Distance,Muscles,TD Control
+TD8,0.889796712,Angle,Muscles,TD Control
+TD8,0.983527578,Orientation,Muscles,TD Control
+TD9,0.940281083,Distance,Muscles,TD Control
+TD9,0.91449868,Angle,Muscles,TD Control
+TD9,0.925445323,Orientation,Muscles,TD Control
+TD10,0.866268487,Distance,Muscles,TD Control
+TD10,0.788748987,Angle,Muscles,TD Control
+TD10,0.961481094,Orientation,Muscles,TD Control
+TD11,0.927843272,Distance,Muscles,TD Control
+TD11,0.959716685,Angle,Muscles,TD Control
+TD11,0.957355534,Orientation,Muscles,TD Control
+,0.900973092,Distance,PowerBars,TD Control
+,0.948492095,Angle,PowerBars,TD Control
+,0.96616098,Orientation,PowerBars,TD Control
+,0.938039024,Distance,PowerBars,TD Control
+,0.927999922,Angle,PowerBars,TD Control
+,0.937553578,Orientation,PowerBars,TD Control
+,0.967612159,Distance,PowerBars,TD Control
+,0.969146097,Angle,PowerBars,TD Control
+,0.913067974,Orientation,PowerBars,TD Control
+,0.956660774,Distance,PowerBars,TD Control
+,0.929016579,Angle,PowerBars,TD Control
+,0.970851957,Orientation,PowerBars,TD Control
+,0.771510676,Distance,PowerBars,TD Control
+,0.715733354,Angle,PowerBars,TD Control
+,0.888233651,Orientation,PowerBars,TD Control
+,0.937291917,Distance,PowerBars,TD Control
+,0.88733453,Angle,PowerBars,TD Control
+,0.889826132,Orientation,PowerBars,TD Control
+,0.909372512,Distance,PowerBars,TD Control
+,0.869521785,Angle,PowerBars,TD Control
+,0.956128178,Orientation,PowerBars,TD Control
+,0.879323403,Distance,PowerBars,TD Control
+,0.838135046,Angle,PowerBars,TD Control
+,0.960163962,Orientation,PowerBars,TD Control
+,0.925757442,Distance,PowerBars,TD Control
+,0.915775202,Angle,PowerBars,TD Control
+,0.960820266,Orientation,PowerBars,TD Control
+,0.923008914,Distance,PowerBars,TD Control
+,0.932585361,Angle,PowerBars,TD Control
+,0.950704956,Orientation,PowerBars,TD Control
+,0.898153112,Distance,PowerBars,TD Control
+,0.931046651,Angle,PowerBars,TD Control
+,0.953886567,Orientation,PowerBars,TD Control
+,0.971416324,Distance,PowerBars,TD Control
+,0.926187754,Angle,PowerBars,TD Control
+,0.954828876,Orientation,PowerBars,TD Control
+,0.968238435,Distance,Muscles,Adult Control 1
+,0.944723284,Angle,Muscles,Adult Control 1
+,0.945508752,Orientation,Muscles,Adult Control 1
+,0.949537817,Distance,Muscles,Adult Control 1
+,0.916703647,Angle,Muscles,Adult Control 1
+,0.918472234,Orientation,Muscles,Adult Control 1
+,0.968210721,Distance,Muscles,Adult Control 1
+,0.927814483,Angle,Muscles,Adult Control 1
+,0.977342895,Orientation,Muscles,Adult Control 1
+,0.962889395,Distance,Muscles,Adult Control 1
+,0.914843913,Angle,Muscles,Adult Control 1
+,0.925341847,Orientation,Muscles,Adult Control 1
+,0.979252585,Distance,Muscles,Adult Control 1
+,0.982067036,Angle,Muscles,Adult Control 1
+,0.986173923,Orientation,Muscles,Adult Control 1
+,0.913214933,Distance,Muscles,Adult Control 1
+,0.933875583,Angle,Muscles,Adult Control 1
+,0.966263464,Orientation,Muscles,Adult Control 1
+,0.914779798,Distance,Muscles,Adult Control 1
+,0.927703065,Angle,Muscles,Adult Control 1
+,0.940243151,Orientation,Muscles,Adult Control 1
+,0.935018129,Distance,Muscles,Adult Control 1
+,0.913392112,Angle,Muscles,Adult Control 1
+,0.980546836,Orientation,Muscles,Adult Control 1
+,0.984675797,Distance,Muscles,Adult Control 1
+,0.948656688,Angle,Muscles,Adult Control 1
+,0.959061024,Orientation,Muscles,Adult Control 1
+,0.920791015,Distance,Muscles,Adult Control 1
+,0.861726629,Angle,Muscles,Adult Control 1
+,0.984246288,Orientation,Muscles,Adult Control 1
+,0.889546667,Distance,Muscles,Adult Control 1
+,0.956029586,Angle,Muscles,Adult Control 1
+,0.973090812,Orientation,Muscles,Adult Control 1
+,0.954270083,Distance,Muscles,Adult Control 1
+,0.9436626,Angle,Muscles,Adult Control 1
+,0.972579434,Orientation,Muscles,Adult Control 1
+,0.857499876,Distance,Muscles,Adult Control 1
+,0.907056042,Angle,Muscles,Adult Control 1
+,0.943403126,Orientation,Muscles,Adult Control 1
+,0.902537881,Distance,Muscles,Adult Control 1
+,0.953150749,Angle,Muscles,Adult Control 1
+,0.93611964,Orientation,Muscles,Adult Control 1
+,0.94979486,Distance,Muscles,Adult Control 1
+,0.928152624,Angle,Muscles,Adult Control 1
+,0.985009209,Orientation,Muscles,Adult Control 1
+,0.9441132,Distance,Muscles,Adult Control 1
+,0.926589397,Angle,Muscles,Adult Control 1
+,0.971119228,Orientation,Muscles,Adult Control 1
+,0.933850625,Distance,Muscles,Adult Control 1
+,0.921121896,Angle,Muscles,Adult Control 1
+,0.963701675,Orientation,Muscles,Adult Control 1
+,0.902023817,Distance,PowerBars,Adult Control 1
+,0.943956004,Angle,PowerBars,Adult Control 1
+,0.944489975,Orientation,PowerBars,Adult Control 1
+,0.956547189,Distance,PowerBars,Adult Control 1
+,0.976424577,Angle,PowerBars,Adult Control 1
+,0.924213502,Orientation,PowerBars,Adult Control 1
+,0.917522792,Distance,PowerBars,Adult Control 1
+,0.867815828,Angle,PowerBars,Adult Control 1
+,0.9679471,Orientation,PowerBars,Adult Control 1
+,0.945152359,Distance,PowerBars,Adult Control 1
+,0.975105012,Angle,PowerBars,Adult Control 1
+,0.960449028,Orientation,PowerBars,Adult Control 1
+,0.905151495,Distance,PowerBars,Adult Control 1
+,0.902217319,Angle,PowerBars,Adult Control 1
+,0.974868017,Orientation,PowerBars,Adult Control 1
+,0.935928503,Distance,PowerBars,Adult Control 1
+,0.925821622,Angle,PowerBars,Adult Control 1
+,0.968451486,Orientation,PowerBars,Adult Control 1
+,0.931234477,Distance,PowerBars,Adult Control 1
+,0.897111128,Angle,PowerBars,Adult Control 1
+,0.916304912,Orientation,PowerBars,Adult Control 1
+,0.920229934,Distance,PowerBars,Adult Control 1
+,0.884205742,Angle,PowerBars,Adult Control 1
+,0.982140885,Orientation,PowerBars,Adult Control 1
+,0.96000428,Distance,PowerBars,Adult Control 1
+,0.971058425,Angle,PowerBars,Adult Control 1
+,0.965446172,Orientation,PowerBars,Adult Control 1
+,0.932781625,Distance,PowerBars,Adult Control 1
+,0.948101872,Angle,PowerBars,Adult Control 1
+,0.96678884,Orientation,PowerBars,Adult Control 1
+,0.912283014,Distance,PowerBars,Adult Control 1
+,0.933009771,Angle,PowerBars,Adult Control 1
+,0.972233646,Orientation,PowerBars,Adult Control 1
+,0.963993282,Distance,PowerBars,Adult Control 1
+,0.945944827,Angle,PowerBars,Adult Control 1
+,0.972147728,Orientation,PowerBars,Adult Control 1
+,0.857440854,Distance,PowerBars,Adult Control 1
+,0.987703079,Angle,PowerBars,Adult Control 1
+,0.932094174,Orientation,PowerBars,Adult Control 1
+,0.910735704,Distance,PowerBars,Adult Control 1
+,0.963086992,Angle,PowerBars,Adult Control 1
+,0.951311087,Orientation,PowerBars,Adult Control 1
+,0.986187701,Distance,PowerBars,Adult Control 1
+,0.966919202,Angle,PowerBars,Adult Control 1
+,0.965869032,Orientation,PowerBars,Adult Control 1
+,0.900313263,Distance,PowerBars,Adult Control 1
+,0.896599109,Angle,PowerBars,Adult Control 1
+,0.925517624,Orientation,PowerBars,Adult Control 1
+,0.976616767,Distance,PowerBars,Adult Control 1
+,0.987919309,Angle,PowerBars,Adult Control 1
+,0.953951732,Orientation,PowerBars,Adult Control 1
+,0.933888653,Distance,Muscles,Adult Control 2
+,0.967895146,Angle,Muscles,Adult Control 2
+,0.97826199,Orientation,Muscles,Adult Control 2
+,0.977393385,Distance,Muscles,Adult Control 2
+,0.949733788,Angle,Muscles,Adult Control 2
+,0.934870314,Orientation,Muscles,Adult Control 2
+,0.901274123,Distance,Muscles,Adult Control 2
+,0.96012133,Angle,Muscles,Adult Control 2
+,0.956011969,Orientation,Muscles,Adult Control 2
+,0.968578433,Distance,Muscles,Adult Control 2
+,0.94745817,Angle,Muscles,Adult Control 2
+,0.97826487,Orientation,Muscles,Adult Control 2
+,0.954843883,Distance,Muscles,Adult Control 2
+,0.977650756,Angle,Muscles,Adult Control 2
+,0.929681509,Orientation,Muscles,Adult Control 2
+,0.963880291,Distance,Muscles,Adult Control 2
+,0.945902828,Angle,Muscles,Adult Control 2
+,0.968386513,Orientation,Muscles,Adult Control 2
+,0.982899742,Distance,Muscles,Adult Control 2
+,0.963817808,Angle,Muscles,Adult Control 2
+,0.972618562,Orientation,Muscles,Adult Control 2
+,0.882102007,Distance,Muscles,Adult Control 2
+,0.851127139,Angle,Muscles,Adult Control 2
+,0.979278353,Orientation,Muscles,Adult Control 2
+,0.917056111,Distance,Muscles,Adult Control 2
+,0.915673598,Angle,Muscles,Adult Control 2
+,0.979512584,Orientation,Muscles,Adult Control 2
+,0.919130597,Distance,Muscles,Adult Control 2
+,0.933035076,Angle,Muscles,Adult Control 2
+,0.950043302,Orientation,Muscles,Adult Control 2
+,0.922073574,Distance,Muscles,Adult Control 2
+,0.863928574,Angle,Muscles,Adult Control 2
+,0.973013768,Orientation,Muscles,Adult Control 2
+,0.821621554,Distance,Muscles,Adult Control 2
+,0.788833045,Angle,Muscles,Adult Control 2
+,0.935376193,Orientation,Muscles,Adult Control 2
+,0.946294181,Distance,Muscles,Adult Control 2
+,0.923788811,Angle,Muscles,Adult Control 2
+,0.971420419,Orientation,Muscles,Adult Control 2
+,0.972451684,Distance,Muscles,Adult Control 2
+,0.975389408,Angle,Muscles,Adult Control 2
+,0.948182763,Orientation,Muscles,Adult Control 2
+,0.932020946,Distance,Muscles,Adult Control 2
+,0.882724079,Angle,Muscles,Adult Control 2
+,0.979298098,Orientation,Muscles,Adult Control 2
+,0.909291547,Distance,Muscles,Adult Control 2
+,0.955674546,Angle,Muscles,Adult Control 2
+,0.954587888,Orientation,Muscles,Adult Control 2
+,0.87036102,Distance,PowerBars,Adult Control 2
+,0.95517243,Angle,PowerBars,Adult Control 2
+,0.971714936,Orientation,PowerBars,Adult Control 2
+,0.951643108,Distance,PowerBars,Adult Control 2
+,0.971574921,Angle,PowerBars,Adult Control 2
+,0.944286223,Orientation,PowerBars,Adult Control 2
+,0.948669372,Distance,PowerBars,Adult Control 2
+,0.981330272,Angle,PowerBars,Adult Control 2
+,0.96855671,Orientation,PowerBars,Adult Control 2
+,0.966295098,Distance,PowerBars,Adult Control 2
+,0.964061817,Angle,PowerBars,Adult Control 2
+,0.957200331,Orientation,PowerBars,Adult Control 2
+,0.94862667,Distance,PowerBars,Adult Control 2
+,0.906302228,Angle,PowerBars,Adult Control 2
+,0.921884391,Orientation,PowerBars,Adult Control 2
+,0.975784366,Distance,PowerBars,Adult Control 2
+,0.93702394,Angle,PowerBars,Adult Control 2
+,0.959481744,Orientation,PowerBars,Adult Control 2
+,0.976766433,Distance,PowerBars,Adult Control 2
+,0.918749888,Angle,PowerBars,Adult Control 2
+,0.928336737,Orientation,PowerBars,Adult Control 2
+,0.946016922,Distance,PowerBars,Adult Control 2
+,0.959634031,Angle,PowerBars,Adult Control 2
+,0.985866297,Orientation,PowerBars,Adult Control 2
+,0.938105662,Distance,PowerBars,Adult Control 2
+,0.881137303,Angle,PowerBars,Adult Control 2
+,0.852059794,Orientation,PowerBars,Adult Control 2
+,0.963412692,Distance,PowerBars,Adult Control 2
+,0.982364477,Angle,PowerBars,Adult Control 2
+,0.967420283,Orientation,PowerBars,Adult Control 2
+,0.899479934,Distance,PowerBars,Adult Control 2
+,0.940541044,Angle,PowerBars,Adult Control 2
+,0.954668199,Orientation,PowerBars,Adult Control 2
+,0.96163159,Distance,PowerBars,Adult Control 2
+,0.966306015,Angle,PowerBars,Adult Control 2
+,0.974206509,Orientation,PowerBars,Adult Control 2
+,0.90731105,Distance,PowerBars,Adult Control 2
+,0.876314143,Angle,PowerBars,Adult Control 2
+,0.962792926,Orientation,PowerBars,Adult Control 2
+,0.985029541,Distance,PowerBars,Adult Control 2
+,0.990908965,Angle,PowerBars,Adult Control 2
+,0.963104201,Orientation,PowerBars,Adult Control 2
+,0.92658205,Distance,PowerBars,Adult Control 2
+,0.929970566,Angle,PowerBars,Adult Control 2
+,0.955637624,Orientation,PowerBars,Adult Control 2
+,0.937207503,Distance,PowerBars,Adult Control 2
+,0.965774888,Angle,PowerBars,Adult Control 2
+,0.974288986,Orientation,PowerBars,Adult Control 2

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Param>
-	<DataPath>/Users/shiva/Dropbox/Burke Work/DeepMarker/Processed Data/AHA2D/AHAKinematics/AHA_2017/Post/Body</DataPath>
-	<MapFile>OP_BodyMap.csv</MapFile>
+	<DataPath>../../Data/AHA2D/AHA_2017/Post/Body</DataPath>
+	<MapFile>Datafiles/OP_BodyMap.csv</MapFile>
 	<JointNames>
 		<item>RShoulder</item>
 		<item>RElbow</item>
@@ -14,12 +14,12 @@
 	</JointNames>
 	<Fs>30</Fs>
 	<TaskSegmentFlag>True</TaskSegmentFlag>
-	<TimeSegFile>TimeData_I.csv</TimeSegFile>
+	<TimeSegFile>Datafiles/TimeData_I.csv</TimeSegFile>
 	<Trunc>
 		<item>1</item>
 		<item>2</item>
 	</Trunc>
-	<OutFile>AHA_2017_Post_Body.pkl</OutFile>
+	<OutFile>Datafiles/AHA_2017_Post_Body.pkl</OutFile>
 	<do_filtering>True</do_filtering>
 	<do_smoothing>False</do_smoothing>
 	<smoothing_alpha>0.1</smoothing_alpha>

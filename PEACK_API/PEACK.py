@@ -9,6 +9,7 @@ from ExtractKinematicData import ExtractKinematicData
 from OP_maps import PartsMap
 from TaskTimes import TaskTimes
 from difflib import get_close_matches
+import progressbar
 import re
 
 def ProcessAsMultiEpochs(Param):
@@ -85,3 +86,92 @@ def AnalyzeEpochs(Param, FuncList=[]):
         SourceLabel.append(subname)
     #import pdb; pdb.set_trace()
     return Results, SourceLabel
+
+def ProcessAsSingleEpochs(Param):
+    print()
+    print("Processing Data from: ", Param.DataPath)
+    DL = DataLoader(Param.DataPath)
+    PEACKData = []
+    Map = PartsMap(Param.MapFile)
+    joints = []
+    joint_names = []
+    bar_count = 0
+    debug_mode = False
+    for str in Param.JointNames:
+        try:
+            joint_names.append(str)
+            joints.append(Map[str])
+        except:
+            print("Error! Key: ", str, " not found in mapping list:\n")
+            print(Map)
+            raise SystemExit
+    bar = progressbar.ProgressBar(max_value=len(DL.SubDirs)*DL.SubDirs[0].Nfiles)      #Approximate total number of files
+    
+    for i in range(DL.NsubDirs):
+        tempStruct = []
+
+        for j in range(0,DL.SubDirs[i].Nfiles):
+            # if(bar_count == 3):
+            #     debug_mode = False
+            # else:
+            #     debug_mode = False
+            Body = ExtractKinematicData(DL.getFile(i,j), joint_names, joints, Param.Fs, len(joints), smoothing_alpha = Param.smoothing_alpha, cutoff = Param.lowpass_cutoff, order = Param.lowpass_order, median_filter=Param.median_filter_win, trunc = Param.Trunc, unit_rescale=Param.unit_rescale, type=Param.method, filtered = Param.do_filtering, drop_lower=Param.drop_contiguous_columns, interp_missing = Param.interp_missing, Use2D = Param.Use2D, debug=debug_mode)
+            #Body = VICON_joint_remapper(tempdata)
+            #import pdb; pdb.set_trace()
+            tempStruct.append(Body)
+            bar.update(bar_count)
+            bar_count = bar_count + 1
+
+        PEACKData.append(tempStruct)
+
+    progressbar.streams.flush()
+    progressbar.streams.wrap_stdout()
+    redirect_stdout=True
+    bar.finish()
+    with open(Param.OutFile, 'wb') as f:
+        pickle.dump(PEACKData, f)
+
+def AnalyzeAsSingleEpochs(Param, FuncList=[]):
+
+    with open(Param.OutFile, 'rb') as f:
+        TempData = pickle.load(f)
+    
+    Results = []
+    SubIDs = []
+    bar_count = 0
+    #import pdb; pdb.set_trace()
+
+    len_groups = len(TempData)
+
+    len_files = len(TempData[0])
+    
+    approx_data_len = len_groups * len_files
+    bar = progressbar.ProgressBar(max_value=approx_data_len)      #Approximate total number of files
+    for i in range(len_groups):          #Iterate through tasks
+        Participants = []
+        PID = []
+
+        n_files = len(TempData[i])
+       
+        for j in range(n_files):   #Iterate through participants
+            
+            Obj = TempData[i][j]
+
+            fn = os.path.split(Obj.filename)[1]
+            fn = fn.replace('-','_')
+            sID = fn.split('_')[0]
+            #import pdb; pdb.set_trace()        
+            Metrics = []
+            # if (j==3):
+            #     import pdb; pdb.set_trace()
+            #print("Processing... ", TempData[i][j].filename)
+            for k in range(len(FuncList)):  #Iterate through metric functions to be evaluated
+                Metrics.append(FuncList[k](Obj))
+            Participants.append(Metrics)
+            PID.append(sID)
+            bar.update(bar_count)
+            bar_count = bar_count + 1
+
+        Results.append(np.squeeze(Participants))
+        SubIDs.append(PID)
+    return Results, SubIDs

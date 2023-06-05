@@ -46,7 +46,12 @@ class DataLoader:
                 subd = SubDirectories()
                 subd.name = lst[i]
                 FullInPath = os.path.join( self.MainPath, subd.name)
+                
                 subd.Files = [f for f in os.listdir(FullInPath) if os.path.isfile(os.path.join(FullInPath, f))]
+                if '.DS_Store' in subd.Files:
+                    idx = subd.Files.index('.DS_Store')
+                    del subd.Files[idx]
+                #import pdb; pdb.set_trace()
                 #subd.Files = sorted(subd.Files)
                 subd.Files.sort(key=natural_keys)
                 subd.Nfiles = len(subd.Files)

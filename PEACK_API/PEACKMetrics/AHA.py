@@ -48,6 +48,7 @@ def trunk_displacement_distance(Body):
     #print(RefLength)
     return (RSh + LSh)/(RefLength)
 
+
 def elbow_flexion_angle(Body):
 
     try:
@@ -64,9 +65,27 @@ def elbow_flexion_angle(Body):
         #ratio = np.nanmedian(RElbAngle / LElbAngle)
 
         #angle_ratio = ratio if ratio < 1 else 1/ratio
+        RElbAngle = np.sort(RElbAngle)
+        RElbAngle[np.isnan(RElbAngle)] = []
+        LElbAngle = np.sort(LElbAngle)
+        LElbAngle[np.isnan(LElbAngle)] = []
+        
+        l1 = int(len(RElbAngle)*0.05)       # Take top 5 percentile of values
+        l2 = int(len(LElbAngle)*0.05)
 
-        return [np.nanmedian(LElbAngle), np.nanmedian(RElbAngle)]
-        #return angle_ratio
+        
+        if(l1 <= 10):
+            RElbAngle95 = np.median(RElbAngle)
+        else:
+            RElbAngle95 = np.median(RElbAngle[-l1:])
+        
+        if(l2 <= 10):
+            LElbAngle95 = np.median(LElbAngle)
+        else:
+            LElbAngle95 = np.median(LElbAngle[-l1:])
+
+        return LElbAngle95, RElbAngle95
+    
     except:
         return np.nan
         return [np.nan, np.nan]

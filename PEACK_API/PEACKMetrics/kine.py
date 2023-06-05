@@ -6,15 +6,17 @@ from PEACKMetrics import metrics
 def velocity(ts, fs, axis = -1):
 
         v = np.diff(ts,axis = axis)/(1.0/fs)
-        return v
+        return np.vstack((v[0], v))
 
 def acceleration(ts = None, vs = None, fs = 60, axis = -1): #Can calculate acceleration from position or velocity data
 
     if not(ts is None) and (vs is None):
         v = velocity(ts, fs, axis)
         a = np.diff(v, axis = axis)/(1.0/fs)
+        np.vstack((a[0], a))
     elif not(vs is None) and (ts is None):
         a = np.diff(vs, axis = axis)/(1.0/fs)
+        np.vstack((a[0], a))
     else:
         print("Error calculating acceleration! Either a position or velocity time series must be specified!")
         raise SystemError
@@ -43,7 +45,7 @@ def va_process(ts, fs, axis = -1):
 
     return v,a
 
-def Eval_trajectories(trials, v_trials, a_trials, fs):
+def Eval_trajectories(trials, v_trials, a_trials):
 
     #plt.figure()
     L = len(trials)
@@ -67,7 +69,8 @@ def Eval_trajectories(trials, v_trials, a_trials, fs):
 
     #plt.plot(trials[0][:,0])
     #plt.show()
-    n_traj = np.ceil(metrics.avg_traj(trials, max_trial_length))/2
+    #n_traj = np.ceil(metrics.avg_traj(trials, max_trial_length))/2
 
     #import pdb; pdb.set_trace()
-    return np.median(v_peak), np.median(vt_peak), np.median(a_peak) , np.median(v_smooth), n_traj
+    return np.mean(v_peak), np.mean(vt_peak), np.mean(a_peak) , np.mean(v_smooth)
+    #return np.median(v_peak), np.median(vt_peak), np.median(a_peak) , np.median(v_smooth), n_traj

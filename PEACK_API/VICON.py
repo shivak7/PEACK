@@ -10,12 +10,64 @@ from OP_maps import PartsMap
 from TaskTimes import TaskTimes
 import matplotlib.pyplot as plt
 import progressbar
+import pandas as pd
+import re
+
+def VICON_joint_remapper(ViconBody):
+
+    try:
+        RWrist = (ViconBody["RWrist1"] + ViconBody["RWrist2"])/2.0
+    except ValueError as ve:
+        if(len(ViconBody["RWrist1"])>1):
+            RWrist = ViconBody["RWrist1"]
+        else:
+            RWrist = ViconBody["RWrist2"]
+
+    try:
+        LWrist = (ViconBody["LWrist1"] + ViconBody["LWrist2"])/2.0
+    except ValueError as ve:
+        if(len(ViconBody["LWrist1"])>1):
+            LWrist = ViconBody["LWrist1"]
+        else:
+            LWrist = ViconBody["LWrist2"]
+
+    try:
+        RElb = (ViconBody["RElbRadial"] + ViconBody["RElbUlnar"])/2.0
+    except ValueError as ve:
+        if(len(ViconBody["RElbRadial"])>1):
+            RElb = ViconBody["RElbRadial"]
+        else:
+            RElb = ViconBody["RElbUlnar"]
+
+    try:
+        LElb = (ViconBody["LElbRadial"] + ViconBody["LElbUlnar"])/2.0
+    except ValueError as ve:
+        if(len(ViconBody["LElbRadial"])>1):
+            LElb = ViconBody["LElbRadial"]
+        else:
+            LElb = ViconBody["LElbUlnar"]
+
+    #import pdb; pdb.set_trace()
+
+    ViconBody.swapKeys('LDeltoid', 'LShoulder')
+    ViconBody.swapKeys('RDeltoid', 'RShoulder')
+    ViconBody.swapKeys('MidSternum', 'Chest')
+    ViconBody['LElbRadial', 'LElbow'] = LElb
+    ViconBody['RElbRadial', 'RElbow'] = RElb
+    ViconBody['LWrist1', 'LWrist'] = LWrist
+    ViconBody['RWrist1', 'RWrist'] = RWrist
+
+    del ViconBody['RElbRadial']; del ViconBody['LElbRadial']
+    del ViconBody['RElbUlnar']; del ViconBody['LElbUlnar']
+    del ViconBody['RWrist1']; del ViconBody['LWrist1']
+    del ViconBody['RWrist2']; del ViconBody['LWrist2']
+    return ViconBody
 
 def ProcessAsSingleEpochs(Param):
     print()
     print("Processing Data from: ", Param.DataPath)
     DL = DataLoader(Param.DataPath)
-    PEACKData = [];
+    PEACKData = []
     Map = PartsMap(Param.MapFile)
     joints = []
     joint_names = []
@@ -39,7 +91,9 @@ def ProcessAsSingleEpochs(Param):
             # else:
             #     debug_mode = False
             tempdata = ExtractKinematicData(DL.getFile(i,j), joint_names, joints, Param.Fs, len(joints), smoothing_alpha = Param.smoothing_alpha, cutoff = Param.lowpass_cutoff, order = Param.lowpass_order, median_filter=Param.median_filter_win, trunc = Param.Trunc, unit_rescale=Param.unit_rescale, type=Param.method, filtered = Param.do_filtering, drop_lower=Param.drop_contiguous_columns, interp_missing = Param.interp_missing, Use2D = Param.Use2D, debug=debug_mode)
-            tempStruct.append(tempdata)
+            Body = VICON_joint_remapper(tempdata)
+            #import pdb; pdb.set_trace()
+            tempStruct.append(Body)
             bar.update(bar_count)
             bar_count = bar_count + 1
 
@@ -62,22 +116,37 @@ def plot_curve(y,x=[]):
         ax.plot(y)
     plt.show(block=True)
 
+
 def AnalyzeAsSingleEpochs(Param, FuncList=[]):
 
     with open(Param.OutFile, 'rb') as f:
         TempData = pickle.load(f)
-    #import pdb; pdb.set_trace()
-
+    
     Results = []
+    SubIDs = []
+    bar_count = 0
+    approx_data_len = len(TempData) * len(TempData[0])
+    bar = progressbar.ProgressBar(max_value=approx_data_len)      #Approximate total number of files
     for i in range(len(TempData)):          #Iterate through tasks
         Participants = []
+        PID = []
         for j in range(len(TempData[i])):   #Iterate through participants
+            fn = os.path.split(TempData[i][j].filename)[1]
+            fn = fn.replace('-','_')
+            sID = fn.split('_')[0]
+            #import pdb; pdb.set_trace()        
             Metrics = []
             # if (j==3):
             #     import pdb; pdb.set_trace()
-            print("Processing... ", TempData[i][j].filename)
+            #print("Processing... ", TempData[i][j].filename)
             for k in range(len(FuncList)):  #Iterate through metric functions to be evaluated
                 Metrics.append(FuncList[k](TempData[i][j]))
             Participants.append(Metrics)
+            PID.append(sID)
+            bar.update(bar_count)
+            bar_count = bar_count + 1
+
         Results.append(Participants)
-    return Results
+        SubIDs.append(PID)
+    return Results, SubIDs
+    

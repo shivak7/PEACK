@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Param>
-	<DataPath>/Users/shiva/Dropbox/Burke Work/DeepMarker/Processed Data/Scratch/Adults_Ctrl_Data_2022</DataPath>
-	<MapFile>VICON_BodyMap.csv</MapFile>
+	<DataPath>../../Data/Proprioception/Vicon/Adults_Ctrl_Data_2022</DataPath>
+	<MapFile>Datafiles/VICON_BodyMap.csv</MapFile>
 	<JointNames>
 		<item>RDeltoid</item>
 		<item>RElbRadial</item>
@@ -23,7 +23,7 @@
 		<item>-3000</item>
 		<item>-1000</item>
 	</Trunc>
-	<OutFile>Adults_2022_Prop.pkl</OutFile>
+	<OutFile>Datafiles/Adults_2022_Prop.pkl</OutFile>
 	<do_filtering>True</do_filtering>
 	<do_smoothing>False</do_smoothing>
 	<smoothing_alpha>0.1</smoothing_alpha>

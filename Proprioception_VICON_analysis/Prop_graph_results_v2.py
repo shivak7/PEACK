@@ -5,17 +5,20 @@ import matplotlib.pyplot as plt
 from scipy.stats import ttest_ind, kruskal, mannwhitneyu, median_test
 
 
-def plot_task(df):
+def plot_task(df, fname):
     sns.set_theme(style="darkgrid", font_scale=2)
-    plt.figure()
+    #fig, ax = plt.subplots()
+    fig = plt.figure(figsize=(8.0, 6.0))
     sns.boxplot(data=df, x="Group", y="Values", hue="Metric",
                linewidth=1, palette="pastel", showfliers = False)
     sns.stripplot(data=df, x="Group", y="Values", hue="Metric",
                     palette={"Distance": "b", "Angle": "r", "Orientation":"g"}, dodge=True)
     sns.despine(left=True)
-
+    #plt.tight_layout()
     plt.legend([],[], frameon=False)
-    plt.show()
+    plt.subplots_adjust(bottom=0.15)
+    #plt.show()
+    plt.savefig(fname, pad_inches = 0, dpi=300)
 
 
 def stat_compare(data, pose, metric, groups, stat):
@@ -51,16 +54,53 @@ def stats_all_poses_metrics(group_pair, selected_stat):
         stat_compare(df,'PowerBars', 'Orientation', group_pair, selected_stat)
 
 
-df = pd.read_csv("Prop_Kids_Adults_mirror.csv")
-df_muscles = df.loc[df['Pose'] == "Muscles"]
-df_powerbars = df.loc[df['Pose'] == "PowerBars"]
-plot_task(df_muscles)
-plot_task(df_powerbars)
+def compare_two_groups(df, Groups, FigDir, selected_stat):
+    
+    fig_fname = FigDir + Groups[0] + '_vs_' + Groups[1]
+    df_1 = df.loc[df['Group'] == Groups[0]]
+    df_2 = df.loc[df['Group'] == Groups[1]]
+    frames = [df_1, df_2]
+    df = pd.concat(frames)
+
+    df_muscles = df.loc[df['Pose'] == "Muscles"]
+    df_powerbars = df.loc[df['Pose'] == "PowerBars"]
+    plot_task(df_muscles, fig_fname + '_mus.' + ext)
+    plot_task(df_powerbars, fig_fname + '_pb.' + ext)
+
+    stats_all_poses_metrics(Groups, selected_stat)
+    
+
+def compare_all_groups(df, FigDir):
+    
+    fig_fname = FigDir + 'All_groups'
+    df_muscles = df.loc[df['Pose'] == "Muscles"]
+    df_powerbars = df.loc[df['Pose'] == "PowerBars"]
+    plot_task(df_muscles, fig_fname + '_mus.' + ext)
+    plot_task(df_powerbars, fig_fname + '_pb.' + ext)
+    
+
+#def heatmap_metrics(df, Group, FigDir):
+     
+
+
+FigDir = 'Figures/'
+metaDataDir = 'Datafiles/'
+Fname = "Prop_Kids_Adults_mirror2.csv"
+ext = 'png'
 selected_stat = kruskal#mannwhitneyu
-group_pair = ['CP AH', 'TD Control']
-stats_all_poses_metrics(group_pair, selected_stat)
-#import pdb; pdb.set_trace()
-# TODO:
-# Replace with direction cosines?
-# eg. [1,0,0] , [0 1 1]
-#
+df = pd.read_csv(metaDataDir + Fname)
+
+compare_all_groups(df, FigDir)
+
+# compare_two_groups(df, ['CP AH', 'CP LA'], FigDir, selected_stat)
+# compare_two_groups(df, ['CP AH', 'TD Control'], FigDir, selected_stat)
+
+# compare_two_groups(df, ['CP LA', 'TD Control'], FigDir, selected_stat)
+
+# compare_two_groups(df, ['TD Control', 'Adult Control 1'], FigDir, selected_stat)
+# compare_two_groups(df, ['TD Control', 'Adult Control 2'], FigDir, selected_stat)
+
+# compare_two_groups(df, ['Adult Control 1', 'Adult Control 2'], FigDir, selected_stat)
+
+
+

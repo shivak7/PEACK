@@ -17,7 +17,7 @@ import warnings
 
 class ExtractKinematicData:
 
-    def __init__(self, fn, joint_names, joints, fs, N_ul_joints, smoothing_alpha=0.5, cutoff=1, order=3, median_filter=1, trunc= [200,0], unit_rescale=1.0, type='PEACK', filtered = False, prior_truncating = True, drop_lower=True, interp_missing = True, Use2D = False, debug = False):
+    def __init__(self, fn, joint_names, joints, fs, N_ul_joints, smoothing_alpha=0.5, cutoff=1, order=3, median_filter=1, trunc= [200,0], unit_rescale=1.0, type='PEACK', filtered = False, prior_truncating = True, drop_lower=0, interp_missing = True, Use2D = False, debug = False):
         self.filename = fn
         self.joints = joints
         self.joint_map = dict(zip(joint_names, np.arange(0,N_ul_joints,1)))
@@ -43,6 +43,7 @@ class ExtractKinematicData:
     def getData(self,drop_lower = True):
         # creates a start and end time for a time vector - removes time to avoid edge artifacts
         #temp = pd.read_csv(self.filename,header=None, skiprows=self.skiprows, skip_blank_lines=True).values
+        #print(self.filename)
         temp = pd.read_csv(self.filename,header=None, index_col=False, names=np.arange(0, self.data_cols,1))
 
         if(self.skiprows > 0):
@@ -132,10 +133,46 @@ class ExtractKinematicData:
 
         try:
             idx = self.joint_map[key]
-            if(self.Use2D==True):
-                return self.data_filtered[idx, :, :2]
-            return self.data_filtered[idx, :, :]
         except KeyError as ke:
             #print("Warning: Key not found: ", key)
             #print("Available keys are: ", list(self.joint_map.keys()))
             return []
+        if(self.Use2D==True):
+                return self.data_filtered[idx, :, :2]
+        return self.data_filtered[idx, :, :]
+    
+    def __setitem__(self, keys, val):
+        
+        try:
+            idx = self.joint_map[keys[0]]
+            self.joint_map[keys[1]] = self.joint_map[keys[0]]
+            if(self.Use2D==True):
+                self.data_filtered[idx, :, :2] = val
+            self.data_filtered[idx, :, :] = val
+        except KeyError as ke:
+            newidx = np.max(list(self.joint_map.values())) + 1
+            self.joint_map[keys[1]] = newidx
+            self.data_filtered = np.append(self.data_filtered, val[np.newaxis,:], axis=0)
+            #import pdb; pdb.set_trace()
+        
+
+    def __delitem__(self, key):
+        
+        try:
+            del self.joint_map[key]
+        except:
+            return []
+
+    def swapKeys(self, old_key, new_key):
+        
+        try:
+            self.joint_map[new_key] = self.joint_map[old_key]
+        except KeyError as ke:
+            print('Swapping keys: Key name mismatch!')
+            import pdb; pdb.set_trace()
+            return False
+        
+        del self.joint_map[old_key]
+        return True
+        
+        

@@ -3,7 +3,7 @@ from scipy.signal import find_peaks
 import matplotlib.pyplot as plt
 
 
-def movements(ts,fs,peak_prom, axis=1, dist = None):
+def movements(ts,peak_prom, axis=1, dist = None):
     pidx = []
 
     if(len(ts.shape)<2):
@@ -12,7 +12,7 @@ def movements(ts,fs,peak_prom, axis=1, dist = None):
     Ndims = ts.shape[axis]
 
     for i in range(Ndims):
-        idx,_ = find_peaks(ts[:,i],distance=dist,prominence=peak_prom, plateau_size=[1,15])
+        idx,_ = find_peaks(ts[:,i],distance=dist, prominence= peak_prom/3, plateau_size=[1,15])#, rel_height=peak_prom) #,prominence=None, plateau_size=[0,15])
         pidx.append(idx)
     #     plt.subplot(Ndims,1,i+1)
     #     plt.plot(ts[:,i])
@@ -28,17 +28,17 @@ def movements(ts,fs,peak_prom, axis=1, dist = None):
         start_indices = start_indices[:-1]
 
 
-    for s in range(len(start_indices)):
-        for i in range(Ndims):
-            trial = ts[start_indices[s]:stop_indices[s],i]
+    # for s in range(len(start_indices)):
+    #     for i in range(Ndims):
+    #         trial = ts[start_indices[s]:stop_indices[s],i]
     #         plt.plot(trial)
     # plt.show()
     #import pdb; pdb.set_trace()
 
-    r = stop_indices - start_indices
+    #r = stop_indices - start_indices
     #print(np.amin(r), '\t', np.amax(r))
     #import pdb; pdb.set_trace()
-    return start_indices, stop_indices
+    return np.array(start_indices), np.array(stop_indices)
     #raise SystemExit
 
 
@@ -47,8 +47,8 @@ def movements(ts,fs,peak_prom, axis=1, dist = None):
 
 def trials(ts, start_indices, stop_indices):
 
-    Trials = [];
-
+    Trials = []
+    #ts = ts.reshape(-1,1)
     for i in range(len(start_indices)):
         trial = ts[start_indices[i]:stop_indices[i], :]
         Trials.append(trial)

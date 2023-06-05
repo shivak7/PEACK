@@ -1,0 +1,216 @@
+Comparing groups:  CP AH, CP LA
+Task:  Muscles
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  139.0  Sig:  0.46461015388609594
+
+Comparing groups:  CP AH, CP LA
+Task:  Muscles
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  152.0  Sig:  0.21307778331415017
+
+Comparing groups:  CP AH, CP LA
+Task:  Muscles
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  133.0  Sig:  0.6212314023292724
+
+Comparing groups:  CP AH, CP LA
+Task:  PowerBars
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  133.0  Sig:  0.6212314023292724
+
+Comparing groups:  CP AH, CP LA
+Task:  PowerBars
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  141.0  Sig:  0.4177484401515663
+
+Comparing groups:  CP AH, CP LA
+Task:  PowerBars
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  119.0  Sig:  0.9842314483424721
+
+Comparing groups:  CP AH, TD Control
+Task:  Muscles
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  61.0  Sig:  0.062357060361406244
+
+Comparing groups:  CP AH, TD Control
+Task:  Muscles
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  71.0  Sig:  0.15409382444616215
+
+Comparing groups:  CP AH, TD Control
+Task:  Muscles
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  44.0  Sig:  0.009074155707402115
+
+Comparing groups:  CP AH, TD Control
+Task:  PowerBars
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  53.0  Sig:  0.026789490102087133
+
+Comparing groups:  CP AH, TD Control
+Task:  PowerBars
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  62.0  Sig:  0.06877493709463742
+
+Comparing groups:  CP AH, TD Control
+Task:  PowerBars
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  70.0  Sig:  0.14181321192727894
+
+Comparing groups:  CP LA, TD Control
+Task:  Muscles
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  31.0  Sig:  0.0023633263452199297
+
+Comparing groups:  CP LA, TD Control
+Task:  Muscles
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  31.0  Sig:  0.0023633263452199297
+
+Comparing groups:  CP LA, TD Control
+Task:  Muscles
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  23.0  Sig:  0.000652408184556037
+
+Comparing groups:  CP LA, TD Control
+Task:  PowerBars
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  43.0  Sig:  0.012863411955457198
+
+Comparing groups:  CP LA, TD Control
+Task:  PowerBars
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  46.0  Sig:  0.01880710166283665
+
+Comparing groups:  CP LA, TD Control
+Task:  PowerBars
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  67.0  Sig:  0.1669838853501704
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  Muscles
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  56.0  Sig:  0.02382158674761137
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  Muscles
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  82.0  Sig:  0.24125766759810408
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  Muscles
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  74.0  Sig:  0.13189704508826744
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  PowerBars
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  108.0  Sig:  0.9332921717336699
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  PowerBars
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  73.0  Sig:  0.12149839880967776
+
+Comparing groups:  TD Control, Adult Control 1
+Task:  PowerBars
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  65.0  Sig:  0.05965581964229015
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  Muscles
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  61.0  Sig:  0.04027045458997503
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  Muscles
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  71.0  Sig:  0.10259526957450671
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  Muscles
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  82.0  Sig:  0.24120531982769755
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  PowerBars
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  72.0  Sig:  0.16716633750626608
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  PowerBars
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  65.0  Sig:  0.09134661651892406
+
+Comparing groups:  TD Control, Adult Control 2
+Task:  PowerBars
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  61.0  Sig:  0.062357060361406244
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  Muscles
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  144.0  Sig:  1.0
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  Muscles
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  118.0  Sig:  0.370466300580814
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  Muscles
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  151.0  Sig:  0.836262135409395
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  PowerBars
+Measure compared:  Distance
+Using statistic:  Mannwhitneyu
+Statistic:  98.0  Sig:  0.17675260335753484
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  PowerBars
+Measure compared:  Angle
+Using statistic:  Mannwhitneyu
+Statistic:  127.0  Sig:  0.7594628653799336
+
+Comparing groups:  Adult Control 1, Adult Control 2
+Task:  PowerBars
+Measure compared:  Orientation
+Using statistic:  Mannwhitneyu
+Statistic:  136.0  Sig:  1.0
+
