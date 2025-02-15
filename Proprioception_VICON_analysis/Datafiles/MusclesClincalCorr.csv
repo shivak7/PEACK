@@ -1,0 +1,37 @@
+,R Value,Sign,Hand Used,Symmetry Metric,Clinical Score
+0,0.0942,1.0,LA,Distance,BBT AH
+1,0.0992,1.0,LA,Distance,BBT LA
+2,0.119,-1.0,LA,Distance,JEB AH
+3,0.078,-1.0,LA,Distance,JEB LA
+4,0.2806,-1.0,LA,Distance,MACS
+5,0.0968,1.0,LA,Distance,AHA
+6,0.2276,1.0,AH,Distance,BBT AH
+7,0.2454,1.0,AH,Distance,BBT LA
+8,0.227,-1.0,AH,Distance,JEB AH
+9,0.0321,1.0,AH,Distance,JEB LA
+10,0.114,-1.0,AH,Distance,MACS
+11,0.0456,-1.0,AH,Distance,AHA
+12,0.3732,1.0,LA,Angle,BBT AH
+13,0.2499,1.0,LA,Angle,BBT LA
+14,0.2853,-1.0,LA,Angle,JEB AH
+15,0.1891,-1.0,LA,Angle,JEB LA
+16,0.5908,-1.0,LA,Angle,MACS
+17,0.2932,1.0,LA,Angle,AHA
+18,0.2232,1.0,AH,Angle,BBT AH
+19,0.2963,1.0,AH,Angle,BBT LA
+20,0.3534,-1.0,AH,Angle,JEB AH
+21,0.0363,1.0,AH,Angle,JEB LA
+22,0.1573,-1.0,AH,Angle,MACS
+23,0.1509,1.0,AH,Angle,AHA
+24,0.616,1.0,LA,Orientation,BBT AH
+25,0.0423,1.0,LA,Orientation,BBT LA
+26,0.7353,-1.0,LA,Orientation,JEB AH
+27,0.6401,-1.0,LA,Orientation,JEB LA
+28,0.7155,-1.0,LA,Orientation,MACS
+29,0.6999,1.0,LA,Orientation,AHA
+30,0.1826,1.0,AH,Orientation,BBT AH
+31,0.0515,-1.0,AH,Orientation,BBT LA
+32,0.5289,-1.0,AH,Orientation,JEB AH
+33,0.4352,-1.0,AH,Orientation,JEB LA
+34,0.3323,-1.0,AH,Orientation,MACS
+35,0.4526,1.0,AH,Orientation,AHA

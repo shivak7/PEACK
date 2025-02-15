@@ -1,0 +1,40 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: PEACK
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Shivakeshavan
+    family-names: Ratnadurai Giridharan
+    email: shiva.keshavan@gmail.com
+    affiliation: >-
+      Burke Neurological Institute / Weill Cornell Medical
+      College
+    orcid: 'https://orcid.org/0000-0002-7915-9772'
+repository-code: 'https://github.com/shivak7/PEACK'
+abstract: >-
+  PEACK (Platform for Extracting and Analyzing Clinical
+  Kinematics) is an open framework built in C++ and Python
+  for convenient access to kinematic data capture from 2D/3D
+  cameras. It also has subsequent kinematics analysis
+  pipelines for various clinical behavioral tasks such as
+  the box and blocks test, cup stacking test, lower limb
+  pendulum test, Assisting hand assessment for children with
+  cerebral palsy, and more. Markerless kinematic data
+  acquisition is made possible by modularly combining 2D/3D
+  cameras with supported body trackers such as OpenPose,
+  NuiTrack, CubeMOS, StereoLabs body tracking SDK and
+  Google's Media pipe pose tracker.
+keywords:
+  - PEACK
+  - Kinematics
+  - Pose
+  - Movement Analysis
+  - Clinical
+  - C++
+  - Python
+license: MIT

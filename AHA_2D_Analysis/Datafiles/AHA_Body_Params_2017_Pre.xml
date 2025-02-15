@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<Param>
+	<DataPath>../../Data/AHA2D/AHA_2017/Pre/Body</DataPath>
+	<MapFile>Datafiles/OP_BodyMap.csv</MapFile>
+	<JointNames>
+		<item>RShoulder</item>
+		<item>RElbow</item>
+		<item>RWrist</item>
+		<item>LShoulder</item>
+		<item>LElbow</item>
+		<item>LWrist</item>
+		<item>Neck</item>
+		<item>MidHip</item>
+	</JointNames>
+	<Fs>30</Fs>
+	<TaskSegmentFlag>True</TaskSegmentFlag>
+	<TimeSegFile>Datafiles/TimeData_F.csv</TimeSegFile>
+	<Trunc>
+		<item>1</item>
+		<item>2</item>
+	</Trunc>
+	<OutFile>Datafiles/AHA_2017_Pre_Body.pkl</OutFile>
+	<do_filtering>True</do_filtering>
+	<do_smoothing>False</do_smoothing>
+	<smoothing_alpha>0.1</smoothing_alpha>
+	<lowpass_cutoff>3</lowpass_cutoff>
+	<lowpass_order>5</lowpass_order>
+	<median_filter_win>0.5</median_filter_win>
+	<unit_rescale>1.0</unit_rescale>
+	<method>PEACK</method>
+	<drop_contiguous_columns>-30</drop_contiguous_columns>
+	<interp_missing>True</interp_missing>
+	<zeros_as_nan>True</zeros_as_nan>
+	<time_unit>ms</time_unit>
+	<Use2D>True</Use2D>
+</Param>

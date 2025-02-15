@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<Param>
+	<DataPath>../../Data/Cups/Cups_tDCS/Day4/LHand</DataPath>
+	<MapFile>Datafiles/OP_HandMap.csv</MapFile>
+	<JointNames>
+		<item>ThumbMC</item>
+		<item>ThumbMCP</item>
+		<item>ThumbIP</item>
+		<item>ThumpDP</item>
+		<item>IndexMCP</item>
+		<item>IndexPIP</item>
+		<item>IndexDIP</item>
+		<item>Index DP</item>
+        <item>MiddleMCP</item>
+		<item>MiddlePIP</item>
+		<item>MiddleDIP</item>
+		<item>RingMCP</item>
+		<item>RingPIP</item>
+		<item>RingDIP</item>
+		<item>RingDP</item>
+		<item>LittleMCP</item>
+        <item>LittlePIP</item>
+		<item>LittleDIP</item>
+		<item>LittleDP</item>
+	</JointNames>
+	<Fs>30</Fs>
+	<TaskSegmentFlag>True</TaskSegmentFlag>
+	<TimeSegFile>Datafiles/TimeDataCups_Day4.csv</TimeSegFile>
+	<Trunc>
+		<item>1</item>
+		<item>2</item>
+	</Trunc>
+	<OutFile>Datafiles/Cups_Day4_LHand.pkl</OutFile>
+	<do_filtering>True</do_filtering>
+	<do_smoothing>False</do_smoothing>
+	<smoothing_alpha>0.1</smoothing_alpha>
+	<lowpass_cutoff>3</lowpass_cutoff>
+	<lowpass_order>5</lowpass_order>
+	<median_filter_win>0.1</median_filter_win>
+	<unit_rescale>1.0</unit_rescale>
+	<method>PEACK</method>
+	<drop_contiguous_columns>0</drop_contiguous_columns>
+	<interp_missing>True</interp_missing>
+	<Use2D>True</Use2D>
+</Param>

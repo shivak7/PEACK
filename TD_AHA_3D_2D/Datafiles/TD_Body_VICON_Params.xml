@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<Param>
+	<DataPath>../../Data/TD_AHA3D</DataPath>
+	<MapFile>Datafiles/VICON_BodyMap.csv</MapFile>
+	<JointNames>
+		<item>RShoulder</item>
+		<item>RElbow</item>
+		<item>RWrist1</item>
+        <item>RWrist2</item>
+		<item>LShoulder</item>
+		<item>LElbow</item>
+		<item>LWrist1</item>
+        <item>LWrist2</item>
+		<item>Neck</item>
+		<item>LHip</item>
+        <item>RHip</item>
+	</JointNames>
+	<Fs>100</Fs>
+	<TaskSegmentFlag>False</TaskSegmentFlag>
+	<TimeSegFile></TimeSegFile>
+	<Trunc>
+		<item>0</item>
+		<item>0</item>
+	</Trunc>
+	<OutFile>Datafiles/TD_AHA_3D_Body.pkl</OutFile>
+	<do_filtering>True</do_filtering>
+	<do_smoothing>False</do_smoothing>
+	<smoothing_alpha>0.1</smoothing_alpha>
+	<lowpass_cutoff>1</lowpass_cutoff>
+	<lowpass_order>5</lowpass_order>
+	<median_filter_win>0.1</median_filter_win>
+	<unit_rescale>1000.0</unit_rescale>
+	<method>VICON</method>
+	<drop_contiguous_columns>0</drop_contiguous_columns>
+	<interp_missing>True</interp_missing>
+	<Use2D>False</Use2D>
+</Param>
